@@ -1,0 +1,112 @@
+/* Creator Profile Page Styling */
+
+.profile-header {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.profile-header-glow {
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background-color: var(--accent-primary);
+  opacity: 0.15;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.profile-identity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .profile-identity {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+}
+
+.profile-avatar-large {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-actions-row {
+  display: flex;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}
+
+@media (max-width: 640px) {
+  .profile-actions-row {
+    justify-content: center;
+  }
+}
+
+/* TABS SYSTEM */
+.profile-tabs-bar {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  gap: var(--space-lg);
+  overflow-x: auto;
+}
+
+.profile-tab {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 12px 6px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition-default);
+  white-space: nowrap;
+}
+
+.profile-tab:hover {
+  color: var(--text-primary);
+}
+
+.profile-tab--active {
+  color: var(--accent-primary);
+}
+
+.profile-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+}

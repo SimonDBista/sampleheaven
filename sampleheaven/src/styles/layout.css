@@ -1,0 +1,79 @@
+/* Containers, Grids, and Page Layouts */
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
+.section {
+  padding-top: var(--space-3xl); /* 80px */
+  padding-bottom: var(--space-3xl);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding-top: var(--space-2xl); /* 48px */
+    padding-bottom: var(--space-2xl);
+  }
+}
+
+/* Grid Systems */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg); /* 24px */
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 1025px) {
+  .grid-2col {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Utility Flex Alignments */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Page Spacing Helper */
+.main-content {
+  padding-top: 72px; /* standard navbar height */
+  min-height: calc(100vh - 72px);
+}
+
+@media (max-width: 640px) {
+  .main-content {
+    padding-top: 64px; /* mobile navbar height */
+    min-height: calc(100vh - 64px);
+  }
+}

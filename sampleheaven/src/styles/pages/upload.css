@@ -1,0 +1,138 @@
+/* Upload Page Styling */
+
+.upload-container {
+  max-width: 720px;
+  margin: 40px auto;
+}
+
+/* 1. FILE UPLOAD DROP ZONE */
+.dropzone {
+  border: 2.5px dashed var(--border);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  cursor: pointer;
+  padding: 24px;
+  text-align: center;
+  transition: var(--transition-default);
+}
+
+.dropzone:hover, .dropzone-active {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-hover);
+  box-shadow: var(--shadow-glow);
+}
+
+.dropzone-icon {
+  font-size: 2.5rem;
+  color: var(--text-muted);
+}
+
+/* 2. SEGMENTED SELECT BUTTONS */
+.segmented-control {
+  display: flex;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  gap: 4px;
+  width: 100%;
+}
+
+.segment-btn {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: var(--transition-default);
+}
+
+.segment-btn--active {
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+/* 3. UPLOADED FILES LIST ROW */
+.upload-file-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  margin-top: var(--space-sm);
+}
+
+.file-row-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+}
+
+/* 4. COVER ART PREVIEW SURFACES */
+.cover-art-zone {
+  width: 140px;
+  height: 140px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  gap: 4px;
+  transition: var(--transition-default);
+}
+
+.cover-art-zone:hover {
+  border-color: var(--accent-secondary);
+  background-color: var(--bg-hover);
+}
+
+/* 5. TAGS INPUT AREA */
+.tag-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  min-height: 48px;
+  align-items: center;
+}
+
+.tag-input-wrapper:focus-within {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.tag-pill-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  margin-left: 4px;
+  font-size: 0.85rem;
+}
+
+.tag-pill-remove:hover {
+  color: var(--error);
+}

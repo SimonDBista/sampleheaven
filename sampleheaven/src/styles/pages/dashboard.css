@@ -1,0 +1,6 @@
+/* Dashboard Layout overrides */
+@media (max-width: 768px) {
+  .grid-2col {
+    flex-direction: column !important;
+  }
+}

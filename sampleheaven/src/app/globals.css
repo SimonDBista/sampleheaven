@@ -1,0 +1,16 @@
+/* Import Modular Styling Sheets */
+@import "../styles/variables.css";
+@import "../styles/reset.css";
+@import "../styles/base.css";
+@import "../styles/layout.css";
+@import "../styles/components.css";
+@import "../styles/animations.css";
+
+/* Global Layout Utilities */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}

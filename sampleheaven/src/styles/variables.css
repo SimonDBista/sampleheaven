@@ -1,0 +1,63 @@
+:root {
+  /* Brand Colors (Dark Theme First) */
+  --bg-primary: hsl(240, 15%, 8%);
+  --bg-secondary: hsl(240, 12%, 12%);
+  --bg-tertiary: hsl(240, 10%, 16%);
+  --bg-hover: hsl(240, 10%, 20%);
+  --surface-glass: hsla(240, 15%, 20%, 0.6);
+  
+  --accent-primary: hsl(265, 90%, 65%);
+  --accent-primary-hover: hsl(265, 90%, 55%);
+  --accent-secondary: hsl(185, 80%, 55%);
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  
+  --text-primary: hsl(0, 0%, 95%);
+  --text-secondary: hsl(240, 5%, 65%);
+  --text-muted: hsl(240, 5%, 45%);
+  --border: hsl(240, 10%, 20%);
+  
+  /* Status Colors */
+  --success: hsl(142, 70%, 50%);
+  --warning: hsl(38, 95%, 55%);
+  --error: hsl(0, 85%, 60%);
+
+  /* Typography Fonts (overridden by next/font in layout.tsx) */
+  --font-heading: var(--font-outfit), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  /* Spacing Grid (8px base) */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+  --space-5xl: 96px;
+  --space-6xl: 120px;
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows & Effects */
+  --shadow-sm: 0 1px 3px hsla(0, 0%, 0%, 0.3);
+  --shadow-md: 0 4px 16px hsla(0, 0%, 0%, 0.4);
+  --shadow-lg: 0 8px 32px hsla(0, 0%, 0%, 0.5);
+  --shadow-glow: 0 0 20px hsla(265, 90%, 65%, 0.3);
+  --shadow-glow-cyan: 0 0 20px hsla(185, 80%, 55%, 0.25);
+  
+  --glass-bg: hsla(240, 15%, 12%, 0.6);
+  --glass-border: 1px solid hsla(240, 15%, 40%, 0.12);
+  --glass-blur: blur(16px);
+
+  /* Transitions */
+  --transition-default: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
